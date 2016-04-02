@@ -1,11 +1,11 @@
 # Teaching Operating Systems with Tracing #
 
-## A set of courses for students and software practitioners ##
+## A set of open-source courses for students and software practitioners ##
 
 *Robert N. M. Watson* and *George V. Neville-Neil*
 
 We have observed a decline in the teaching of operating systems
-fundamental in a period where it is becoming more important, in large
+fundamentals in a period where it is becoming more important, in large
 part due to a lack of contemporary and re-usable material, and
 training for people to teach operating systems. Where such courses
 still exist they work with toys rather than real systems, avoid
@@ -31,7 +31,7 @@ The preferred text for the course is
 [The Design and Implementation of the FreeBSD Operating System, 2nd Ed.](http://www.informit.com/store/design-and-implementation-of-the-freebsd-operating-9780321968975)
 
 The material contained herein is shared under a permissive,
-[open source license](LICENSE.md) with the intent that it is widely
+[open-source license](LICENSE.md) with the intent that it is widely
 adopted.
 
 
