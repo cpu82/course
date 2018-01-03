@@ -10,6 +10,9 @@
 \usepackage{standalone}
 \begin{document}
 
+% Define where to find our figures
+\newcommand*{\FigPath}{../figures}%
+
 \input{intro}
 \input{dtrace}
 \input{processes}
@@ -17,6 +20,7 @@
 \input{extending}
 \input{sdt}
 \input{networking}
+\input{tcp}
 \input{mbuf}
 \input{filesystems}
 

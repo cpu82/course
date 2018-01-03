@@ -45,14 +45,12 @@
 
 \begin{frame}[fragile]
   \frametitle{Looking Directly at Sockets}
-\begin{verbatim}
-# Count sockets by family
-
-# Count sockets by type
-
-# Count sockets by protocol
-\end{verbatim}  
+  \begin{itemize}
+  \item The \verb|socket| system call
+  \item Also the \verb|fbt| versions
+  \end{itemize}
 \end{frame}
+
 
 \begin{frame}
   \frametitle{Network Lab (Sockets Exercises)}
@@ -65,19 +63,15 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Network Stack}
-\end{frame}
-
-\begin{frame}
   \frametitle{Network Stack Overview}
 \centering
-\includegraphics{../figures/tcpipstack}
+\includegraphics{\FigPath/tcpipstack}
 \end{frame}
 
 \begin{frame}
 \centering
   \frametitle{Inbound Layer Transitions}
-\includegraphics[width=0.5\textwidth]{../figures/inbound}
+\includegraphics[width=0.5\textwidth]{\FigPath/inbound}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -92,40 +86,18 @@
 \end{frame}
 
 \begin{frame}[fragile]
+  \frametitle{UDP Structures}
+  \begin{itemize}
+  \item \verb|udpinfo_t| UDP header data
+  \item \verb|udpsinfo_t| UDP socket data
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
   \frametitle{UDP Send and Receive}
   \begin{itemize}
   \item \verb|udptrack|
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \frametitle{TCP}
-  \begin{itemize}
-  \item Transmission Control Protocol
-  \item Stream based
-  \item In order delivery
-  \item Maintains the illusion of a byte stream
-  \end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]
-  \frametitle{TCP Connections}
-  \begin{itemize}
-  \item \verb|tcpconn|
-  \end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]
-  \frametitle{TCP State Machine}
-  \begin{itemize}
-  \item \verb|tcpstate|
-  \end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]
-  \frametitle{Tracking More of TCP}
-  \begin{itemize}
-  \item \verb|tcptrack|
   \end{itemize}
 \end{frame}
 
@@ -148,7 +120,7 @@
 
 \begin{frame}
   \frametitle{A Worked Example}
-      \includegraphics[width=\textwidth]{../figures/labsetup.png}
+      \includegraphics[width=\textwidth]{\FigPath/labsetup.png}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -188,9 +160,8 @@ value  ------------- Distribution ------------- count
 \begin{frame}[fragile]
   \frametitle{Network Lab (Protocols)}
   \begin{itemize}
-  \item Show inbound connections to sshd
   \item What routines are called when a ping packet arrives?
-  \item What routines are called before \verb+tcp_output()+?
+  \item What routines are called before \verb+ether_output()+?
   \end{itemize}
 \end{frame}
 
